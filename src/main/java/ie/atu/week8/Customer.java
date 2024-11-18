@@ -18,7 +18,23 @@ public class Customer extends Person{//Person class with additional information
     @Override
     public String toString() {//turn into printable string
         return super.toString() + //print person toString and then customer toString, concatenate both
-                " custNumber='" + custNumber + '\'' +
-                ", mailingList=" + mailingList ;
+                ", custNumber = '" + custNumber + '\'' +
+                ", mailingList = " + mailingList ;
+    }
+
+    public String getCustNumber() {
+        return custNumber;
+    }
+
+    public void setCustNumber(String custNumber) {
+        this.custNumber = custNumber;
+    }
+
+    public boolean isMailingList() {
+        return mailingList;
+    }
+
+    public void setMailingList(boolean mailingList) {
+        this.mailingList = mailingList;
     }
 }
